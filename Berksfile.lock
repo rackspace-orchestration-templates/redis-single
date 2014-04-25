@@ -1,0 +1,18 @@
+{
+  "sources": {
+    "apt": {
+      "locked_version": "2.3.10"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "redisio": {
+      "locked_version": "2.1.1",
+      "git": "https://github.com/JasonBoyles/redisio.git",
+      "ref": "490453bb32efff6c03f757b492f01642723c2b75"
+    },
+    "ulimit": {
+      "locked_version": "0.3.2"
+    }
+  }
+}
