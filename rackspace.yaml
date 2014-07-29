@@ -2,7 +2,7 @@ schema-version: 1.0.0
 application-family: Databases
 application-name: Redis
 application-version: 2.8.6
-flavor: Single Linux server running Redis
+flavor: Single Linux server
 flavor-weight: 2
 abstract: A single Linux server running a standalone instance of [redis](http://redis.io/).
 reach-info:
