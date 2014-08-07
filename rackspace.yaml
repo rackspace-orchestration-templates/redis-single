@@ -1,13 +1,28 @@
 schema-version: 1.0.0
 application-family: Databases
 application-name: Redis
-application-version: 2.8.6
+application-version: 2.8.13
 flavor: Single Linux server
 flavor-weight: 2
+hidden_outputs:
+  - private_key
+  - redis_password
 abstract: A single Linux server running a standalone instance of [redis](http://redis.io/).
 reach-info:
   tattoo: https://0b5294b243620310a700-e388a7f3aba385a925111b1fc6f680d4.ssl.cf2.rackcdn.com/redis-tattoo.png
   icon-20x20: https://0b5294b243620310a700-e388a7f3aba385a925111b1fc6f680d4.ssl.cf2.rackcdn.com/redis-icon-20x20.png
-hidden_outputs:
-  - private_key
-  - redis_password
+instructions: |
+  #### Getting Started
+
+  By default redis runs on port 6379 and is configured to listen on all
+  interfaces. Authentication is configured and a randomly generated password
+  is assigned. The password is available in the `redis_password` output.
+  If you want to test with `redis-cli` remember to use the `-a` option
+  and supply the password.
+
+  #### Logging in via SSH
+  The private key provided in the passwords section can be used to login as
+  root via SSH. We have an article on how to use these keys with [Mac OS X and
+  Linux](http://www.rackspace.com/knowledge_center/article/logging-in-with-a-ssh-private-key-on-linuxmac)
+  as well as [Windows using
+  PuTTY](http://www.rackspace.com/knowledge_center/article/logging-in-with-a-ssh-private-key-on-windows).
