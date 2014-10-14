@@ -64,12 +64,14 @@ parameters:
       description: Must be a supported operating system.
 
   redis_version:
-    description: version of redis to install
+    label: Redis Version
+    description: version of Redis to install
     type: string
     default: 2.8.14
 
   redis_hostname:
-    description: Hostname for redis server
+    label: Server Hostname
+    description: Hostname for Redis server
     type: string
     default: redis
 
