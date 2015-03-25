@@ -114,7 +114,7 @@ resources:
       sequence: lettersdigits
 
   redis_server:
-    type: Rackspace::Cloud::Server
+    type: OS::Nova::Server
     depends_on: ssh_key
     properties:
       name: { get_param: redis_hostname }
