@@ -1,8 +1,10 @@
 heat_template_version: 2013-05-23
 
 description: |
-  This is a Heat template to deploy a standalone redis server on
-  Rackspace Cloud Servers
+  #### Single Server
+
+  A single Linux server running a standalone instance of
+  [redis 2.8.13](http://redis.io/).
 
 parameter_groups:
 
